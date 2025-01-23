@@ -1,6 +1,7 @@
 # Home-Care-Company-Database
 Project Title: Home Care Company Database
 Team Members: Diana Nalivaiko, Roberto Rojas Perez, and Asal Mojtabaei
+
 System Used: MySQL
 
 In our Database Systems Management class, we developed a database for the Home Care Company, which provides healthcare assistance to seniors and disabled individuals. This database was designed to manage the company’s operations, including storing and tracking vital information about clients, nurses, and their interactions.
