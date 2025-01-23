@@ -1,5 +1,6 @@
 # Home-Care-Company-Database
 Project Title: Home Care Company Database
+
 Team Members: Diana Nalivaiko, Roberto Rojas Perez, and Asal Mojtabaei
 
 System Used: MySQL
