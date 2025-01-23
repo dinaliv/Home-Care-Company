@@ -64,7 +64,7 @@
         <section>
             <h2>Client Registration Form</h2>
          
-                <form action="post.php" method="post">
+                <form action="../post.php" method="post">
             
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" required><br><br>
@@ -96,7 +96,7 @@
 
         <section class="update-client">
             <h2>Update Client Record</h2>
-            <form action="post.php" method="post">
+            <form action="../post.php" method="post">
                 <label for="clientID">Client ID:</label><br>
                 <input type="number" id="clientID" name="clientID" required><br><br>
         
@@ -131,7 +131,7 @@
 
         <section class="delete-client">
             <h2>Delete Client Record</h2>
-            <form action="post.php" method="post">
+            <form action="../post.php" method="post">
                 <label for="clientID">Client ID:</label><br>
                 <input type="number" id="clientID" name="clientID" required><br><br>
                 <input type="hidden" name="action" value="delete">
@@ -141,7 +141,7 @@
 
         <section class="query-client">
             <h2>Query Clients by Date of Birth</h2>
-            <form action="query.php" method="get">
+            <form action="../query.php" method="get">
                 <label for="startDate">Start Date:</label><br>
                 <input type="date" id="startDate" name="startDate" required><br><br>
                 
