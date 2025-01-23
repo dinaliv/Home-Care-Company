@@ -1,0 +1,254 @@
+/* Basic Settings */
+html {
+    font-family: Raleway;
+    font-size:var(--typography--font-size--small);
+    line-height: 1.7;
+
+    color: var(--colors--text);
+
+    scroll-behavior: smooth;  
+}
+
+body {
+    background-color: var(--colors--background);
+}
+
+main {
+    background-color: #eaeaeace;
+}
+
+/* Header */
+header img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    margin-top: var(--layout--spacing-small);
+}
+
+header h1 {
+    font-size: var(--typography--font-size--large);
+    text-transform: capitalize;
+}
+
+
+/* Layout */
+header, main, footer {
+    max-width: var(--layout--max-width);
+    margin: 0 auto 0 auto;
+}
+
+/* Navigation */
+#primary ul {
+    list-style-type: none;
+    padding-left: 0;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 0;
+    border-bottom: 2px solid var(--colors--text);
+}
+
+#primary li {
+    display: flex;
+    justify-content: end;
+    margin-right: 2.5px;;
+}
+
+#primary {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-bottom: var(--layout--medium-spacing) solid var(--colors--secondary);
+    
+}
+
+#primary h1 {
+    margin-bottom: 0;
+    margin-top: var(--layout--spacing-small);
+    border-bottom: 2px solid var(--colors--text);
+}
+
+.social-media {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-right: 75%;
+}
+#primary a {
+    color:var(--colors--text);
+    text-decoration: none;
+}
+
+
+
+#footer-nav ul{
+    list-style-type: none;
+    margin-top: 0;
+}
+
+#footer-nav a{
+    text-decoration: none;
+}
+
+
+
+/* Sections */
+section img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    margin-top: var(--layout--spacing-small);
+
+}
+
+section {
+    margin-left: var(--layout--spacing-small);
+    margin-right: var(--layout--spacing-small);
+}
+
+
+h2 {
+    font-size: var(--layout--medium-spacing);
+    background-color: var(--colors--background);
+    color: var(--colors--text);
+    padding: var(--layout--medium-spacing);
+    padding-left: var(--layout--spacing-small);
+    border: 4px solid var(--colors--background);
+    border-left: 0;
+    border-right: 0;
+
+    text-transform: uppercase;
+}
+
+.services {
+    padding-top: var(--layout--spacing-small);
+}
+
+
+h3 {
+    padding: var(--layout--medium-spacing);
+    padding-top: var(--layout--spacing-small);
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+p {
+    padding: var(--layout--medium-spacing);
+    padding-top: 0;
+    margin-top:0;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+/* Anchors */
+a {
+    text-decoration-style: dashed;
+    color:var(--colors--text);
+}
+
+
+/* Footer */
+footer {
+    border-top: var(--layout--medium-spacing) solid var(--colors--secondary);
+    margin-top: var(--layout--medium-spacing);
+}
+
+
+/* Form */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    background-color: var(--colors--background);
+}
+
+fieldset {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+
+input[type="text"], input[type="date"], select {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: var(--colors--secondary);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#clientType{
+    width: 30%; 
+}
+
+input[type="submit"]:hover {
+    background-color: var(--colors--primary);
+}
+
+.register-client{
+    background-color: var(--colors--background);
+    margin: 0px;
+}
+
+/* Medium Screen Layout */
+@media screen and (min-width: 500px) {
+    #primary {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: var(--layout--medium-spacing) solid var(--colors--secondary);
+    }
+
+    h2 {
+        font-size: var(--typography--font-size--large);
+    }
+
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--layout--spacing-small);
+    }
+
+    .services img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+
+}
+
+/* Large Screen Layout */
+@media screen and (min-width: 1200px) {
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: var(--layout--spacing-small);
+        
+    }
+
+    .services img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+
+
+
+}

@@ -1,0 +1,21 @@
+:root {
+    /* colors */
+    --colors--primary:#A4284D;
+    --colors--background:white;
+    --colors--text:black;
+    --colors--secondary:#CBC5EA;
+
+    /* typography */
+    --typography--font-size--small: 1rem;
+    --typography--font-size--medium: 1.5rem;
+    --typography--font-size--large: 2rem;
+    --layout--extra-large-spacing: 5.5rem;
+
+   /* spacing */
+   --layout--max-width: 1200px;
+   --layout--spacing-small: 0.5rem;
+   --layout--medium-spacing: 1.2rem;
+   --layout--large-spacing: 2.5rem;
+   --layout--extra-large-spacing: 6rem;   
+
+}

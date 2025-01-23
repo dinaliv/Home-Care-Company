@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME CARE COMPANY</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    <script src="https://kit.fontawesome.com/57aa54adbd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        
+        <nav id="primary">
+            <h1><a href="index.html">Home Care Company</a></h1>
+            <ul>
+                <li><a href="pages/index.html"> Contact </a></li>
+                <li><a href="pages/index.html"> Donate </a></li>
+                <li><a href="pages/index.html"> Visit </a></li>
+            </ul>
+        </nav>
+
+        <img src="images/main-picture.jpg" alt="a man sitting on a bench">
+
+    </header>
+
+    <main>
+        
+        <h2>Our Services</h2>
+        <section class="services">
+            
+            <article>
+                <img src="images/seniors-comp.jpg">
+                <h3>Connect With Others</h3>
+                <p>The "Connect with Others" service at our retirement home is designed to foster a sense of community and belonging among our residents. By organizing a variety of social activities, including group outings, hobby clubs, and regular social gatherings, we ensure that every individual has ample opportunities to build meaningful relationships.</p>
+            </article>
+
+            <article>
+                <img src="images/fit-sen.jpg">
+                <h3>Fitness Program</h3>
+                <p>Our retirement home's fitness program is dedicated to promoting physical health and well-being among our residents. Tailored to meet the varying needs and abilities of older adults, the program includes a range of activities such as low-impact aerobics, strength training, yoga, and water aerobics. Certified fitness instructors lead these sessions, ensuring safety and proper technique.</p>
+            </article>
+
+            <article>
+                <img src="images/disabled.jpg">
+                <h3>Disabled Care</h3>
+                <p>Our Disabled Care Services provide specialized support and assistance tailored to individuals with diverse disabilities. We offer a range of services including personal care, mobility aid, therapeutic interventions, and daily living assistance. Our compassionate and highly trained staff work closely with each individual to create a personalized care plan that promotes independence, dignity, and quality of life. Through a combination of medical support, social activities, and emotional care, we strive to ensure that every individual feels empowered and valued in a safe and nurturing environment.</p>
+            </article>
+
+            <article>
+                <img src="images/nurse.jpg">
+                <h3>Long-Term Care</h3>
+                <p>Long-term care services at our retirement home are designed to support the health, well-being, and quality of life of our residents. We offer comprehensive care that includes personalized medical services, assistance with daily living activities, and a range of therapeutic and recreational programs. Our dedicated staff provides compassionate care tailored to each resident's needs, whether they require help with medication management, mobility support, or specialized nursing care. </p>
+            </article>
+        </section>
+
+        
+        <h2><hr>ADMIN PAGE</h2>
+        
+        <section>
+            <h2>Client Registration Form</h2>
+         
+                <form action="post.php" method="post">
+            
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+        
+                <label for="dataOfBirth">Date of Birth:</label><br>
+                <input type="date" id="dataOfBirth" name="dataOfBirth" required><br><br>
+        
+                <label for="phoneNumber">Phone Number:</label><br>
+                <input type="text" id="phoneNumber" name="phoneNumber" maxlength="10" required><br><br>
+        
+                <label for="postalCode">Postal Code:</label><br>
+                <input type="text" id="postalCode" name="postalCode" maxlength="6" required><br><br>
+        
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="city"><br><br>
+        
+                <label for="street">Street:</label><br>
+                <input type="text" id="street" name="street"><br><br>
+        
+                <label for="clientType">Client Type:</label><br>
+                <select id="clientType" name="clientType" required>
+                    <option value="Senior">Senior</option>
+                    <option value="Disabled">Disabled</option>
+                </select><br><br>
+        
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section class="update-client">
+            <h2>Update Client Record</h2>
+            <form action="post.php" method="post">
+                <label for="clientID">Client ID:</label><br>
+                <input type="number" id="clientID" name="clientID" required><br><br>
+        
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="dataOfBirth">Date of Birth:</label><br>
+                <input type="date" id="dataOfBirth" name="dataOfBirth" required><br><br>
+                
+                <label for="phoneNumber">Phone Number:</label><br>
+                <input type="text" id="phoneNumber" name="phoneNumber" maxlength="10" required><br><br>
+                
+                <label for="postalCode">Postal Code:</label><br>
+                <input type="text" id="postalCode" name="postalCode" maxlength="6" required><br><br>
+                
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="city"><br><br>
+                
+                <label for="street">Street:</label><br>
+                <input type="text" id="street" name="street"><br><br>
+                
+                <label for="clientType">Client Type:</label><br>
+                <select id="clientType" name="clientType" required>
+                    <option value="Senior">Senior</option>
+                    <option value="Disabled">Disabled</option>
+                </select><br><br>
+        
+                <input type="hidden" name="action" value="update">
+                <input type="submit" value="Update">
+            </form>
+        </section>
+
+        <section class="delete-client">
+            <h2>Delete Client Record</h2>
+            <form action="post.php" method="post">
+                <label for="clientID">Client ID:</label><br>
+                <input type="number" id="clientID" name="clientID" required><br><br>
+                <input type="hidden" name="action" value="delete">
+                <input type="submit" value="Delete">
+            </form>
+        </section>
+
+        <section class="query-client">
+            <h2>Query Clients by Date of Birth</h2>
+            <form action="query.php" method="get">
+                <label for="startDate">Start Date:</label><br>
+                <input type="date" id="startDate" name="startDate" required><br><br>
+                
+                <label for="endDate">End Date:</label><br>
+                <input type="date" id="endDate" name="endDate" required><br><br>
+                
+                <input type="submit" value="Search">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <h3>Learn More</h3>
+        <nav id="footer-nav">
+            <ul>
+                <li><a href="index.html">About Home Care Company</a></li>
+                <li><a href="index.html">Mission and History</a></li>
+                <li><a href="index.html">Support</a></li>
+                <li><a href="index.html">Host an Event</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+            
+            <h3> Follow Us</h3>
+            <ul class="social-media">
+                <li>
+                    <a href="index.html">
+                        <i aria-hidden="true" class="fa-brands fa-instagram"></i>
+                        <span class="fa-sr-only">The home's Instagram account</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        <i aria-hidden="true" class="fa-brands fa-x-twitter"></i>
+                        <span class="fa-sr-only">The home's Twitter account</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="index.html">
+                        <i aria-hidden="true" class="fa-brands fa-youtube"></i>
+                        <span class="fa-sr-only">The home's Youtube account</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+    </footer>
+    
+</body>
+</html>
